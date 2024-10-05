@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Vista - Online Gallery Image</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sunset Vista</h1>
+        <h2>Your personal, fully customizable, image gallery!</h2>
+    </header>
+
+    <nav>
+        <p>Sobre</p>
+        <p>Termos de uso</p>
+        <p>Sign In</p>
+        <p>Sign Up</p>
+        <p>Contato</p>
+    </nav>
+
+    <main>
+        <section class="sidebarMenu">
+            <a id="uploadLink" href="#uploadBox">Upload Image</a>
+            <p>Nome da galeria</p>
+            <p>Criar nova galeria</p>
+            <p>Renoemar galeria</p>
+            <p>Gerenciar galerias</p>
+
+        </section>
+
+        <section class="mainPanel">
+            <p>Aqui vão as fotos</p>
+            <img id="uploadedImage" width="100%" />
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
+    
+    <div class="overlay" id="modalOverlay"></div>
+    <div class="modal" id="modal">
+        <h2 id="modalWindowTitle"></h2>
+        <p id="modalDescription"></p>
+        <span id="modalContent"></span>
+    </div>
+    
+</body>
+<script src="index2.js"></script>
+</html>
+
+
+<!--
+    Galeria de Imagens
+
+    1) Criar HTML (no styling yet)
+        a - Professional looking header
+        b - horizontal navbar - navigation
+        c - vertical left navbar - gallery functionalities
+        d - grid with images thumbnails, click for bigger and left/right controls
+        f - footer
+    2) Criar layout com CSS
+        a = 
+    3) Adicionar interatividade JS
+        a - fazer upload de imagem
+        b - inserir esta imagem no painel como thumbnail
+        c - permitir que ela seja clicada para aumentar
+    4) Estilizar com CSS
+    5) Testar
+
+-->

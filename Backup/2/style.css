@@ -1,0 +1,102 @@
+body {
+    border: 2px solid red;
+    margin: 1%;
+    padding: 1%;
+}
+
+header {
+    border: 2px solid blue;
+    margin: 0.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid green;
+    margin: 0.5%;
+}
+
+nav p {
+    border: 1px solid darkgreen;
+    
+}
+
+#buttonAndInput {
+    display: flex;
+    border: 2px solid black;
+    margin: 0.5%;
+    justify-content: center;
+}
+main {
+    display: flex;
+    border: 2px solid darkmagenta;
+    margin: 0.5%;
+}
+
+.sidebarMenu {
+    border: 2px solid purple;
+    margin: 0.5%;
+    flex: 0.5;
+}
+
+.mainPanel {
+    border: 2px solid orange;
+    margin: 0.5%;
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: stretch;
+}
+
+.thumbnail {
+    object-fit: cover; 
+    cursor: pointer;
+
+}
+
+.enlarge {
+    width: 90%;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio while expanding */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha (last value) for the desired opacity */
+    z-index: 1000;
+}
+
+#leftButton {
+    width: 10%;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio while expanding */
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+}
+
+#rightButton {
+    width: 10%;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio while expanding */
+    position: absolute;
+    bottom: 1%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+}
+
+footer {
+    border: 2px solid darkgreen;
+    margin: 0.5%;
+}

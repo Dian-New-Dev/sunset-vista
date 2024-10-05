@@ -1,0 +1,145 @@
+html {
+    background-color: black;
+}
+
+body {
+    font-family: helvetica;
+    color: white;
+    
+
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    
+}
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+header {
+    border: 2px solid purple;
+    background-color: #1c1d26;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid purple;
+    background-color: #1c1d26;
+    
+}
+
+#buttonAndInput {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#upButton {
+    width: 15%;
+    background-color: gray;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5%;;
+}
+
+input[type="file"] {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+  }
+
+main {
+    display: flex;
+    border: 2px solid darkmagenta;
+    
+}
+
+.sidebarMenu {
+    border: 2px solid purple;
+    background-color: #242631;
+    
+    flex: 0.5;
+}
+
+.mainPanel {
+    border: 0.1px purple white;
+    background-color: #1c1d26;
+    padding: 20px;
+    
+    flex: 2;
+    height:450px;
+    display: grid;
+    overflow-y: auto;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: stretch;
+}
+
+.thumbnail {
+    object-fit: cover; 
+    cursor: pointer;
+
+}
+
+.enlarge {
+    width: 750px;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio while expanding */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha (last value) for the desired opacity */
+    z-index: 1000;
+}
+
+#leftButton {
+    width: 30px;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio while expanding */
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+}
+
+#rightButton {
+    width: 30px;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio while expanding */
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+}
+
+footer {
+    border: 2px solid purple;
+    background-color: #1c1d26;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 2.5rem;
+    align-items: center;
+    left: 50%; /* Set the left position to 50% */
+    transform: translateX(-50%); /
+}
